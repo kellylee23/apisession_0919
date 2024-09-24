@@ -10,7 +10,7 @@ const SomeComponent = () => {
   useEffect(() => {
     const getData = async () => {
       setLoading(true);
-      const result = await fetchData(1, 10, 'json');
+      const result = await fetchData(1, 46, 'json');
       if (result && result.data) {
         setData(result.data);
       } else {
@@ -32,16 +32,18 @@ const SomeComponent = () => {
 
   return (
     <div>
-      <div className='header'>
-      <h1>API 데이터 - 전라북도 익산시_식품제조가공업체_리스트</h1>
-      </div>
-      <ol>
-        {data.map((item, index) => (
-          <li key={index}>
-            {item['업종명']} - {item['업소명']} - {item['소재지(도로명)']} - {item['소재지전화']}
-          </li>
-        ))}
-      </ol>
+      <div className='header' />
+      <h2 className='text'>[ 질병별 판정현황 ]</h2>
+
+      {data.map((item, index) => (
+      
+        <h5 key={index}>
+          <h5 className='text-color'>구분 : {item['구분']} </h5>
+          <h5 className='text-center'>판정(건) : {item['판정(건)']}</h5>
+          <h5 className='text-center'>인정(건) : {item['인정(건)']}</h5>
+          <h5 className='text-center'>인정률(퍼센트) : {item['인정률(퍼센트)']}</h5>
+        </h5> 
+      ))} 
     </div>
   );
 };

@@ -3,7 +3,7 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 export const fetchDatas = async (page = 1, perPage = 10) => {
     try {
-      const endpoint = '/3079081/v1/uddi:1f002587-06d6-4911-89f7-84f6d7074529'//같은 api일 경우에는, 앤드포인트만 바꾸면된다.
+      const endpoint = '/15101150/v1/uddi:9759a59e-b892-4698-90b5-85e6dd0d99e1'//같은 api일 경우에는, 앤드포인트만 바꾸면된다.
       // 요청 URL을 출력
       console.log(`${BASE_URL}${endpoint}이다${page}페이지이다${perPage}퍼페이지이다`);
       

@@ -28,20 +28,46 @@
   color: #61dafb;
 }
 
-.header {
-  background-color: aquamarine;
+.table-header {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  color: black;
+  text-align: center;
+}
+
+.text {
+  color: #000;
+  text-align: left;
+  
+}
+.text-center {
+  color: #000;
+  text-align: center;
+  
+}
+
+.text-color {
+  color: red;
+  text-align: left;
+  text-align: center;
+}
+
+.table-color {
+  background-color: yellow;
+  border: 1px solid #000;
+  border-collapse: collapse;
   color: black;
 }
 
-.main-bg {
-  height: 500px;
-  background: url('./img/logoiksan.png');	/* 시작 경로는 src폴더 이다. */
-  width: 500px;
-  background-position: center;
-  background-size: auto;
-  margin : auto;
+.header-color {
+  background-color:#e0ed6c ;
+  border-radius: 20px;
+  width: 700px;
+  height: auto;
+  color: black;
+  text-align: center;
+  margin:auto;
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -1,18 +1,30 @@
 import './App.css';
 
 import React from 'react';
-import SomeComponent from './SomeComponent'; // SomeComponent 경로에 맞게 수정하세요
-import SomeComponent2 from './SomeComponent2';
+import Disease from './disease'; 
+import Region from './region';
 
+import styled from "styled-components";
 
+const StyledFlex = styled.div`
+display: flex;
+flex-direction: row;
+gap: 100px;
+justify-content: center;
+`;
 
 function App() {
   return (
     <div className="App">
-      <SomeComponent />
-      <div className='main-bg'></div>
-      <SomeComponent2 />
-      
+      <div className='header-color'>
+        <h1>근로복지공단_업무상질병판정위원회_2023</h1>
+      </div>
+            
+      <StyledFlex>
+        <Disease />
+        <Region />
+      </StyledFlex>
+
     </div>
   );
 }
